@@ -1,12 +1,14 @@
-const cookieNotice = document.getElementById("cookieNotice");
-const acceptBtn = document.getElementById("acceptCookies");
+// cookies.js
+window.addEventListener("DOMContentLoaded", () => {
+  const banner = document.getElementById("cookieNotice");
+  const btn = document.getElementById("acceptCookies");
 
-if (!localStorage.getItem("cookiesAccepted")) {
-  cookieNotice.classList.remove("d-none");
-}
+  if (!localStorage.getItem("cookiesAccepted")) {
+    banner.classList.remove("d-none");
+  }
 
-
-acceptBtn.addEventListener("click", () => {
-  localStorage.setItem("cookiesAccepted", "true");
-  cookieNotice.classList.add("d-none");
+  btn.addEventListener("click", () => {
+    banner.classList.add("d-none");
+    localStorage.setItem("cookiesAccepted", "true");
+  });
 });
