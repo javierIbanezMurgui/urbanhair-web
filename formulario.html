@@ -53,60 +53,58 @@
 <main class="container my-4">
   <h1>Pedir cita online</h1>
 
-  <form>
-    <div class="mb-3">
-      <label for="nombre" class="form-label">Nombre</label>
-      <input type="text" id="nombre" class="form-control" required>
-    </div>
+<form action="https://formspree.io/f/xojneerb" method="POST">
+  <div class="mb-3">
+    <label for="nombre" class="form-label">Nombre</label>
+    <input type="text" id="nombre" name="Nombre" class="form-control" required>
+  </div>
 
-    <div class="mb-3">
-      <label for="email" class="form-label">Correo electrónico</label>
-      <input type="email" id="email" class="form-control" required>
-    </div>
+  <div class="mb-3">
+    <label for="email" class="form-label">Correo electrónico</label>
+    <input type="email" id="email" name="Email" class="form-control" required>
+  </div>
 
+  <div class="mb-3">
+    <label for="tipoCorte" class="form-label">Tipo de corte</label>
+    <select id="tipoCorte" name="Tipo de corte" class="form-select" required>
+      <option value="" disabled selected>Seleccione un corte</option>
+      <option value="Corte Hombre">Corte Hombre</option>
+      <option value="Corte Mujer">Corte Mujer</option>
+      <option value="Corte Niño">Corte Niño</option>
+    </select>
+  </div>
 
-    <div class="mb-3">
-      <label for="tipoCorte" class="form-label">Tipo de corte</label>
-      <select id="tipoCorte" class="form-select" required>
-        <option value="" disabled selected>Seleccione un corte</option>
-        <option value="corte_hombre">Corte Hombre</option>
-        <option value="corte_mujer">Corte Mujer</option>
-        <option value="corte_ninio">Corte Niño</option>
-      </select>
-    </div>
+  <div class="mb-3">
+    <label for="hora" class="form-label">Hora</label>
+    <select id="hora" name="Hora" class="form-select" required>
+      <option value="" disabled selected>Seleccione una hora</option>
+      <option value="09:00">09:00</option>
+      <option value="10:00">10:00</option>
+      <option value="11:00">11:00</option>
+      <option value="12:00">12:00</option>
+      <option value="13:00">13:00</option>
+      <option value="16:00">16:00</option>
+      <option value="17:00">17:00</option>
+      <option value="18:00">18:00</option>
+      <option value="19:00">19:00</option>
+    </select>
+  </div>
 
+  <div class="mb-3">
+    <label for="mensaje" class="form-label">Mensaje</label>
+    <textarea id="mensaje" name="Mensaje" class="form-control"></textarea>
+  </div>
 
-    <div class="mb-3">
-      <label for="hora" class="form-label">Hora</label>
-      <select id="hora" class="form-select" required>
-        <option value="" disabled selected>Seleccione una hora</option>
-        <option value="09:00">09:00</option>
-        <option value="10:00">10:00</option>
-        <option value="11:00">11:00</option>
-        <option value="12:00">12:00</option>
-        <option value="13:00">13:00</option>
-        <option value="16:00">16:00</option>
-        <option value="17:00">17:00</option>
-        <option value="18:00">18:00</option>
-        <option value="19:00">19:00</option>
-      </select>
-    </div>
+  <div class="form-check mb-3">
+    <input class="form-check-input" type="checkbox" id="acepto" name="Acepto" required>
+    <label class="form-check-label" for="acepto">
+      Acepto la política de privacidad
+    </label>
+  </div>
 
+  <button class="btn btn-dark" type="submit">Enviar</button>
+</form>
 
-    <div class="mb-3">
-      <label for="mensaje" class="form-label">Mensaje</label>
-      <textarea id="mensaje" class="form-control"></textarea>
-    </div>
-
-    <div class="form-check mb-3">
-      <input class="form-check-input" type="checkbox" id="acepto" required>
-      <label class="form-check-label" for="acepto">
-        Acepto la política de privacidad
-      </label>
-    </div>
-
-    <button class="btn btn-dark">Enviar</button>
-  </form>
 </main>
 
 <footer class="bg-dark text-white text-center py-3">
@@ -117,6 +115,7 @@
 </footer>
 
 <script src="js/theme.js"></script>
+<script src="js/form.js"></script>
 
 </body>
 </html>

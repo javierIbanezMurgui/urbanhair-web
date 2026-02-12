@@ -1,182 +1,231 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <title>Peluquería UrbanHair</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Peluquería UrbanHair. Cortes modernos y clásicos.">
-  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Peluquería UrbanHair</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Peluquería UrbanHair. Cortes modernos y clásicos."
+    />
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
 
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
 
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
 
-  <link rel="stylesheet" href="css/style.css">
-</head>
+  <body>
+    <a href="#contenido" class="visually-hidden-focusable"
+      >Saltar al contenido</a
+    >
 
-<body>
+    <header class="bg-dark">
+      <nav class="navbar navbar-expand-lg navbar-dark container">
+        <a class="navbar-brand" href="index.html">
+          <img
+            src="images/peluqueria.png"
+            alt="UrbanHair Peluquería"
+            height="40"
+          />
+          UrbanHair
+        </a>
 
-<a href="#contenido" class="visually-hidden-focusable">Saltar al contenido</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#menu"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-<header class="bg-dark">
-  <nav class="navbar navbar-expand-lg navbar-dark container">
+        <div class="collapse navbar-collapse" id="menu">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="formulario.html">Cita</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="politica.html">Privacidad</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="terminos.html">Términos</a>
+            </li>
+          </ul>
 
-    <a class="navbar-brand" href="index.html">
-  <img src="images/peluqueria.png"
-      alt="UrbanHair Peluquería"
-      height="40"> UrbanHair
-    </a>
+          <button
+            id="modo"
+            class="btn btn-outline-light btn-sm ms-3"
+            aria-label="Cambiar modo claro u oscuro"
+          >
+            🌙
+          </button>
+        </div>
+      </nav>
+    </header>
 
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+    <main id="contenido" class="container my-4">
+      <section class="text-center mb-4">
+        <h1>Peluquería UrbanHair</h1>
+        <p>En UrbanHair tu look, nuestra pasión.</p>
 
-    <div class="collapse navbar-collapse" id="menu">
-      <ul class="navbar-nav ms-auto">
-        <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
-        <li class="nav-item"><a class="nav-link" href="formulario.html">Cita</a></li>
-        <li class="nav-item"><a class="nav-link" href="politica.html">Privacidad</a></li>
-        <li class="nav-item"><a class="nav-link" href="terminos.html">Términos</a></li>
-      </ul>
+        <ul class="list-unstyled d-flex justify-content-center mt-3">
+          <li class="me-4">Atención personalizada</li>
+          <li class="me-4">Productos profesionales</li>
+          <li class="me-4">Ambiente moderno</li>
+          <li>Especialistas en tendencias</li>
+        </ul>
+      </section>
 
-      <button
-        id="modo"
-        class="btn btn-outline-light btn-sm ms-3"
-        aria-label="Cambiar modo claro u oscuro">
-        🌙
-      </button>
-    </div>
-  </nav>
-</header>
+      <section>
+        <h2 class="mb-3">¡Empieza ya!</h2>
 
-<main id="contenido" class="container my-4">
+        <div class="row">
+          <div class="col-md-2">
+            <ol class="list-group list-group-numbered">
+              <li class="list-group-item">
+                <a
+                  href="formulario.html"
+                  class="stretched-link text-decoration-none text-dark"
+                  >Reserve su cita</a
+                >
+              </li>
+              <li class="list-group-item">Elije tu corte</li>
+              <li class="list-group-item">Elije hora</li>
+              <li class="list-group-item">Y confirme su cita online</li>
+            </ol>
+          </div>
 
-  <section class="text-center mb-4">
-    <h1>Peluquería UrbanHair</h1>
-    <p>
-      En UrbanHair tu look, nuestra pasión.
-    </p>
+          <div class="col-md-10">
+            <div class="row g-3">
+              <div class="col-md-4">
+                <a
+                  href="corte_hombre.html"
+                  class="text-decoration-none text-dark"
+                >
+                  <div class="card">
+                    <img
+                      src="images/zonahombre1.jpg"
+                      class="card-img-top"
+                      alt="Corte hombre"
+                    />
+                    <div class="card-body">
+                      <h3 class="h5">Corte clásico</h3>
+                      <p>Un estilo sencillo y cómodo.</p>
+                    </div>
+                  </div>
+                </a>
+              </div>
 
-  <ul class="list-unstyled d-flex justify-content-center mt-3">
-    <li class="me-4">Atención personalizada</li>
-    <li class="me-4">Productos profesionales</li>
-    <li class="me-4">Ambiente moderno</li>
-    <li>Especialistas en tendencias</li>
-  </ul>
-  </section>
+              <div class="col-md-4">
+                <a
+                  href="corte_mujer.html"
+                  class="text-decoration-none text-dark"
+                >
+                  <div class="card">
+                    <img
+                      src="images/zonamujer.jpg"
+                      class="card-img-top"
+                      alt="Corte mujer"
+                    />
+                    <div class="card-body">
+                      <h3 class="h5">Corte mujer</h3>
+                      <p>Un look actual adaptado a cada mujer.</p>
+                    </div>
+                  </div>
+                </a>
+              </div>
 
-<section>
-  <h2 class="mb-3">¡Empieza ya!</h2>
-
-      <div class="row">
-
-    <div class="col-md-2">
-      <ol class="list-group list-group-numbered">
-        <li class="list-group-item"><a href="formulario.html" class="stretched-link text-decoration-none text-dark">Reserve su cita</a></li>
-        <li class="list-group-item">Elije tu corte</li>
-        <li class="list-group-item">Elije hora</li>
-        <li class="list-group-item">Y confirme su cita online</li>
-      </ol>
-    </div>
-
-
-    <div class="col-md-10">
-
-  <div class="row g-3">
-
-    <div class="col-md-4">
-      <a href="corte_hombre.html" class="text-decoration-none text-dark">
-        <div class="card">
-          <img src="images/zonahombre1.jpg" class="card-img-top" alt="Corte hombre">
-          <div class="card-body">
-            <h3 class="h5">Corte clásico</h3>
-            <p>Un estilo sencillo y cómodo.</p>
+              <div class="col-md-4">
+                <a
+                  href="corte_ninio.html"
+                  class="text-decoration-none text-dark"
+                >
+                  <div class="card">
+                    <img
+                      src="images/zonaninio1.jpg"
+                      class="card-img-top"
+                      alt="Corte joven"
+                    />
+                    <div class="card-body">
+                      <h3 class="h5">Corte niño</h3>
+                      <p>Ideal para un estilo más juvenil.</p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
           </div>
         </div>
-      </a>
-    </div>
+      </section>
 
+      <section class="my-5">
+        <h2 class="mb-3 text-center">Precios</h2>
 
-    <div class="col-md-4">
-      <a href="corte_mujer.html" class="text-decoration-none text-dark">
-        <div class="card">
-          <img src="images/zonamujer.jpg" class="card-img-top" alt="Corte mujer">
-          <div class="card-body">
-            <h3 class="h5">Corte mujer</h3>
-            <p>Un look actual adaptado a cada persona.</p>
-          </div>
+        <div class="table-responsive">
+          <table class="table table-striped table-bordered">
+            <thead class="table-dark">
+              <tr>
+                <th>Servicio</th>
+                <th>Precio</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Corte Hombre</td>
+                <td>15 €</td>
+              </tr>
+              <tr>
+                <td>Corte Mujer</td>
+                <td>20 €</td>
+              </tr>
+              <tr>
+                <td>Corte Niño</td>
+                <td>10 €</td>
+              </tr>
+            </tbody>
+          </table>
         </div>
-      </a>
-    </div>
+      </section>
 
-
-    <div class="col-md-4">
-      <a href="corte_ninio.html" class="text-decoration-none text-dark">
-        <div class="card">
-          <img src="images/zonaninio1.jpg" class="card-img-top" alt="Corte joven">
-          <div class="card-body">
-            <h3 class="h5">Corte niño</h3>
-            <p>Ideal para un estilo más informal.</p>
-          </div>
+      <section class="my-5">
+        <h2 class="mb-3 text-center">Dónde encontrarnos</h2>
+        <div class="ratio ratio-16x9">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3318.5700518925696!2d-0.4175512882137093!3d39.51236897148087!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd60450976e0d815%3A0x516de2479caae51a!2sP%20Y%20J%20Peluqueros!5e1!3m2!1ses!2ses!4v1770914277203!5m2!1ses!2ses"
+            style="border: 0"
+            loading="lazy"
+          >
+          </iframe>
         </div>
-      </a>
+      </section>
+    </main>
+
+    <footer class="bg-dark text-white text-center py-3">
+      <p>2026 Peluquería UrbanHair</p>
+      <a href="terminos.html" class="text-white">Términos</a> |
+      <a href="politica.html" class="text-white">Privacidad</a> |
+      <a href="sitemap.html" class="text-white">Mapa del sitio</a>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/theme.js"></script>
+    <script src="js/cookies.js"></script>
+
+    <div
+      id="cookieNotice"
+      class="alert alert-dark text-center fixed-bottom mb-0 p-2 justify-content-between align-items-center d-none"
+    >
+      <span
+        >Este sitio web usa cookies propias para mejorar tu experiencia.</span
+      >
+      <button id="acceptCookies" class="btn btn-success btn-sm">Aceptar</button>
     </div>
-  </div>
-</section>
-
-<section class="my-5">
-  <h2 class="mb-3 text-center">Precios</h2>
-
-  <div class="table-responsive">
-    <table class="table table-striped table-bordered">
-      <thead class="table-dark">
-        <tr>
-          <th>Servicio</th>
-          <th>Precio</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>Corte Hombre</td>
-          <td>15 €</td>
-        </tr>
-        <tr>
-          <td>Corte Mujer</td>
-          <td>20 €</td>
-        </tr>
-        <tr>
-          <td>Corte Niño</td>
-          <td>10 €</td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
-   </div>
-</section>
-
-<section class="my-5">
-  <h2 class="mb-3 text-center">Dónde encontrarnos</h2>
-  <div class="ratio ratio-16x9">
-    <iframe 
-      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3318.5700518925696!2d-0.4175512882137093!3d39.51236897148087!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd60450976e0d815%3A0x516de2479caae51a!2sP%20Y%20J%20Peluqueros!5e1!3m2!1ses!2ses!4v1770914277203!5m2!1ses!2ses" 
-      style="border:0;" 
-      loading="lazy">
-    </iframe>
-  </div>
-</section>
-
-
-
-</main>
-
-<footer class="bg-dark text-white text-center py-3">
-  <p> 2026 Peluquería UrbanHair</p>
-  <a href="terminos.html" class="text-white">Términos</a> |
-  <a href="politica.html" class="text-white">Privacidad</a> |
-  <a href="sitemap.html" class="text-white">Mapa del sitio</a>
-</footer>
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-<script src="js/theme.js"></script>
-
-</body>
+  </body>
 </html>
