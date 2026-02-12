@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://javieribanezmurgui.github.io/urbanhair-web/sitemap.xml

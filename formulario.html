@@ -51,7 +51,7 @@
 </header>
 
 <main class="container my-4">
-  <h1>Pedir cita</h1>
+  <h1>Pedir cita online</h1>
 
   <form>
     <div class="mb-3">
@@ -63,6 +63,35 @@
       <label for="email" class="form-label">Correo electrónico</label>
       <input type="email" id="email" class="form-control" required>
     </div>
+
+
+    <div class="mb-3">
+      <label for="tipoCorte" class="form-label">Tipo de corte</label>
+      <select id="tipoCorte" class="form-select" required>
+        <option value="" disabled selected>Seleccione un corte</option>
+        <option value="corte_hombre">Corte Hombre</option>
+        <option value="corte_mujer">Corte Mujer</option>
+        <option value="corte_ninio">Corte Niño</option>
+      </select>
+    </div>
+
+
+    <div class="mb-3">
+      <label for="hora" class="form-label">Hora</label>
+      <select id="hora" class="form-select" required>
+        <option value="" disabled selected>Seleccione una hora</option>
+        <option value="09:00">09:00</option>
+        <option value="10:00">10:00</option>
+        <option value="11:00">11:00</option>
+        <option value="12:00">12:00</option>
+        <option value="13:00">13:00</option>
+        <option value="16:00">16:00</option>
+        <option value="17:00">17:00</option>
+        <option value="18:00">18:00</option>
+        <option value="19:00">19:00</option>
+      </select>
+    </div>
+
 
     <div class="mb-3">
       <label for="mensaje" class="form-label">Mensaje</label>
@@ -82,6 +111,9 @@
 
 <footer class="bg-dark text-white text-center py-3">
   <p> 2026 Peluquería UrbanHair</p>
+  <a href="terminos.html" class="text-white">Términos</a> |
+  <a href="politica.html" class="text-white">Privacidad</a> |
+  <a href="sitemap.html" class="text-white">Mapa del sitio</a>
 </footer>
 
 <script src="js/theme.js"></script>

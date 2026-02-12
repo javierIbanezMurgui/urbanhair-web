@@ -1,0 +1,6 @@
+/* TEAM */
+Autor: Javier Ibañez Mrugui
+Proyecto: Peluquería UrbanHair
+Curso: DIW 2026
+Tecnologías: HTML5, CSS3, Bootstrap 5, JavaScript
+
