@@ -1,4 +1,3 @@
-// cookies.js
 window.addEventListener("DOMContentLoaded", () => {
   const banner = document.getElementById("cookieNotice");
   const btn = document.getElementById("acceptCookies");
